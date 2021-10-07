@@ -2,7 +2,7 @@ import { Container } from "./styled";
 import Produto from "../produto";
 import { useEffect, useState } from "react";
 
-export default function Index() {
+function Home() {
   const [produtos, setProdutos] = useState([]);
 
   useEffect(listar, []);
@@ -35,3 +35,5 @@ export default function Index() {
     </Container>
   );
 }
+
+export default Home;

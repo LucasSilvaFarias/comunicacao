@@ -6,7 +6,7 @@ import { Container } from './styled.js'
 
 
 
-export default function Index(props) {
+function Produto(props) {
   return (
     <Container>
       <img className="capa" src={props.info.imagem} alt="" />
@@ -23,4 +23,5 @@ export default function Index(props) {
   )
 }
 
+export default Produto;
 
