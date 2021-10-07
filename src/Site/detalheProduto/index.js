@@ -1,11 +1,14 @@
 import Cookie from 'js-cookie'
 import {Link, useHistory} from 'react-router-dom'
 import {Container} from './styled'
+import {useState} from 'react'
+
 
 function Index(props) {
-    const navigation = useHistory();
 
-    const produto = props.location .state;
+    
+    const [produto, setProduto] = useState(props.location.state);
+    const navigation = useHistory();
 
 
     function comprar() {
