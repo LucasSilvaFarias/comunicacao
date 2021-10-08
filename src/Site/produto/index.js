@@ -1,12 +1,11 @@
 
 import { Link } from 'react-router-dom'
-import { Container } from './styled.js'
+import { Container } from './styled'
 
 
 
 
-
-function Produto(props) {
+export default function Produto(props) {
   return (
     <Container>
       <img className="capa" src={props.info.imagem} alt="" />
@@ -23,5 +22,4 @@ function Produto(props) {
   )
 }
 
-export default Produto;
 

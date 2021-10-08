@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 
 
-import './styled.css'
+import './styles.css'
 
 
 import App from './Site/home'

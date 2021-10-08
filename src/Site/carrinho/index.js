@@ -12,11 +12,16 @@ import CarrinhoItem from './carrinhoItem'
 export default function Carrinho() {
   const [produtos, setProdutos] = useState([]);
   
+
   useEffect(carregarCarrinho, []);
+
+
 
   function carregarCarrinho() {
     let carrinho = Cookie.get('carrinho');
-    carrinho = carrinho !== undefined ? JSON.parse(carrinho) : [];
+    carrinho = carrinho !== undefined 
+                  ? JSON.parse(carrinho) 
+                  : [];
 
     setProdutos(carrinho);
   }
@@ -35,6 +40,7 @@ export default function Carrinho() {
      let produtoAlterado = produtos.filter(item => item.id === id)[0];
      produtoAlterado.qtd = qtd;
  
+     // Atualiza o Cookie
      Cookie.set('carrinho', JSON.stringify(produtos));
   }
 
