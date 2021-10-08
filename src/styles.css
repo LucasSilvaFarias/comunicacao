@@ -20,6 +20,16 @@ a, a:visited, a:link {
 
 .container {
   margin: 30px;
-  padding: 20px;
-  border: 1px solid #000;
+}
+
+.Home{
+  margin: 30px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.home-buttons{
+  display: flex;
+  
 }
